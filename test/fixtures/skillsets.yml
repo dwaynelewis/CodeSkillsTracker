@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  skill: MyString
+  hours_studied: 1
+  code: false
+
+two:
+  skill: MyString
+  hours_studied: 1
+  code: false
