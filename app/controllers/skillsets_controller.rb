@@ -14,7 +14,7 @@ class SkillsetsController < ApplicationController
 
   # GET /skillsets/new
   def new
-    @skillset = Skillset.new
+    @skillset =  Skillset.new
   end
 
   # GET /skillsets/1/edit

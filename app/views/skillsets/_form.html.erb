@@ -1,32 +1,22 @@
 <%= form_with(model: skillset, local: true) do |form| %>
-  <% if skillset.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(skillset.errors.count, "error") %> prohibited this skillset from being saved:</h2>
 
-      <ul>
-      <% skillset.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
 
   <div class="field">
     <%= form.label :skill %>
-    <%= form.text_field :skill, id: :skillset_skill %>
+    <%= form.text_field :skill %>
   </div>
 
   <div class="field">
     <%= form.label :hours_studied %>
-    <%= form.number_field :hours_studied, id: :skillset_hours_studied %>
+    <%= form.number_field :hours_studied%>
   </div>
 
   <div class="field">
     <%= form.label :code %>
-    <%= form.check_box :code, id: :skillset_code %>
+    <%= form.check_box :code %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Enter" %>
   </div>
 <% end %>
