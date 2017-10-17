@@ -21,6 +21,8 @@ class SkillsetsController < ApplicationController
   def edit
   end
 
+  def destroy
+  end
   # POST /skillsets
   # POST /skillsets.json
   def create
