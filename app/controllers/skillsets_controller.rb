@@ -71,6 +71,6 @@ class SkillsetsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def skillset_params
-      params.require(:skillset).permit(:skill, :hours_studied, :code)
+      params.require(:skillset).permit(:skill, :hours_studied, :code, :subject_id)
     end
 end
